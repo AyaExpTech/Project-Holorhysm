@@ -3,6 +3,11 @@
 綾急技研が~~半ば動画制作から逃げるために~~制作している、Vtuber事務所『ホロライブ』のファンメイド音ゲーです。  
 現在制作中のbeta版は、PWAを想定してHTML+CSS+JavaScriptを使用しています。
 
+## バージョン
+
+- `ver 0.0.0`
+- 2023-02-20 Released
+
 ## ドキュメント
 
 [Scrapbox](https://scrapbox.io/AXT-Holorhysm/)が立っています。そちらを参照してください。
