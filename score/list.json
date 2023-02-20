@@ -1,0 +1,34 @@
+{
+    "all": {
+        "addition": [
+            "ExcuseBunny_Pekora"
+        ],
+        "name_ja": [
+            "ExcuseBunny_Pekora"
+        ]
+    },
+    "ExcuseBunny_Pekora": {
+        "all": [
+            "Bloom"
+        ],
+        "display": {
+            "ja": "いいわけバニー",
+            "en": "Excuse Bunny"
+        },
+        "singer": {
+            "ja": "兎田ぺこら",
+            "en": "Usada Pekora"
+        },
+        "composer": {
+            "ja": "ナナホシ管弦楽団",
+            "en": "Nanahoshi Orchestra"
+        },
+        "Bloom": {
+            "score": "score/ExcuseBunny_Pekora/Bloom.json",
+            "music": "score/ExcuseBunny_Pekora/common.mp3",
+            "difficulty": "18+",
+            "constant": 18.8,
+            "offset": 0
+        }
+    }
+}
