@@ -15,15 +15,22 @@
 ## 利用規約
 
 Author : AyaExpTech  
-Licensed by "AeTOS for Seller"
+Licensed by "AeTOS for Creator"
 > https://axtech.dev/license/
 
 
 ### プレイヤー向け
 
 - 遊ぼうが配信しようが自由です。
+    - ただし、楽曲の著作権はカバー社とかが持ってるはずです。そっちのガイドラインも遵守してください。
+        - [https://www.hololive.tv/terms](https://www.hololive.tv/terms)
+        - 音楽利用ガイドライン該当外の楽曲は今の所使っていません。
+            - 全メンバー入れたいんですけどこれのせいで現状いろは殿が入れれません助けて
+    - Youtubeの広告収入・スパチャ・スーパーサンクス、niconicoのクリ奨なども受け取っていいはずです。
+        - 「このゲームをプレイした配信」という動画媒体は「二次的楽曲著作物」のはず……。カバーさん、解釈まずかったら連絡ください。
+        - 少なくとも僕は許します。
     - 配信する方は、配信で気になった方のためにリンクなどの動線を確保していただけると幸いです。
-    - `『holorhysm』by AyaExpTech (https://ayaexptech.github.io/Project-Holorhysm/ / Licensed by "AeTOS")`と書いておいてください。
+    - `『holorhysm』by AyaExpTech (https://ayaexptech.github.io/Project-Holorhysm/ / Licensed by "AeTOS")`とでも書いておいてください。
 - バグ見つけたら報告いただけると助かります。
     - 条件特定してissueを投げてくれると非常に助かります。
     - 「こうしたらこうなった」と制作陣の誰かに@ツイートするのでも十分すぎるくらい助かります。
