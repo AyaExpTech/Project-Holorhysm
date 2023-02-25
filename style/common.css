@@ -1,4 +1,13 @@
 /* =================================================================================
+    フォントの読み込み
+================================================================================== */
+
+/* 'M PLUS 1p' */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
+/* 'Ubuntu' (『holorhysm verX.Y.Z-beta.N』だけ表示できればいいので絞って読み込み) */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap&text=holorhysmve1234567890.-bta ');
+
+/* =================================================================================
     リセットCSS(どっちかというとNormalize.css)
 ================================================================================== */
 
@@ -45,4 +54,10 @@ body>main#fade {
 body>main#fade.fading {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* 文字色とフォントの変更 */
+* {
+    color: hsl(240, 0%, 90%);
+    font-family: 'M PLUS 1p', sans-serif;
 }
