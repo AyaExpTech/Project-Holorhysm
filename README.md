@@ -5,7 +5,7 @@
 
 ## バージョン
 
-- `ver 0.1.0-beta.3`
+- `ver 0.1.0-beta.4`
 - 2023-02-26 Released
 
 ## ドキュメント
@@ -18,6 +18,8 @@ Author : AyaExpTech
 Licensed by "AeTOS for Creator"
 > https://axtech.dev/license/
 
+- score/\[MusicID\]/\[*\].mp3などの「楽曲音源」はAeTOS対象外です。
+    - それらのファイル群の利用については楽曲著作権者に従ってください。
 
 ### プレイヤー向け
 

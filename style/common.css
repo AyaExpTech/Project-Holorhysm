@@ -54,6 +54,7 @@ body>main#fade {
 body>main#fade.fading {
     opacity: 1;
     pointer-events: auto;
+    background: linear-gradient(to bottom, hsl(240, 20%, 15%), hsl(240, 20%, 5%));
 }
 
 /* 文字色とフォントの変更 */
