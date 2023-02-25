@@ -1,12 +1,16 @@
 {
+    /* ==== 全楽曲のID一覧を指定順に並べる。 ==== */
     "all": {
+        // addition : 楽曲の追加日順
         "addition": [
             "ExcuseBunny_Pekora"
         ],
+        // addition : 楽曲の日本語名順
         "name_ja": [
             "ExcuseBunny_Pekora"
         ]
     },
+    /* ==== 『いいわけバニー』(兎田ぺこら) ==== */
     "ExcuseBunny_Pekora": {
         "all": [
             "Bloom"

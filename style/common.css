@@ -1,0 +1,48 @@
+/* =================================================================================
+    リセットCSS(どっちかというとNormalize.css)
+================================================================================== */
+
+* {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+
+:where(ul, ol, li) {
+    padding-left: revert;
+}
+
+/* =================================================================================
+    共通部分
+================================================================================== */
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, hsl(240, 20%, 15%), hsl(240, 20%, 5%));
+}
+
+body>main {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    display: none;
+}
+
+body>main.using {
+    display: block;
+}
+
+body>main#fade {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+body>main#fade.fading {
+    opacity: 1;
+    pointer-events: auto;
+}
