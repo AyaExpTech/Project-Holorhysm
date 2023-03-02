@@ -1,0 +1,22 @@
+#list button {
+    color: black;
+    scale: 1;
+    cursor: pointer;
+    transition: scale 0.1s;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+#list button {
+    cursor: pointer;
+    scale: 1;
+    transition: scale 0.1s;
+}
+
+#list button:hover {
+    scale: 1.03;
+}
+
+#list button:active {
+    scale: 0.97;
+}
