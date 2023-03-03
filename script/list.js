@@ -5,18 +5,36 @@
  */
 const select = (musicID, tendency) => {
     document.querySelector("#fade").classList.add("fading");
-    window.setTimeout(() => {
-        document.querySelector("#list").classList.remove("using");
-        document.querySelector("#play").classList.add("using");
-        document.querySelector("#fade").classList.remove("fading");
-    }, 200);
     const playingMusic = musicList.all.addition[musicID];
     const playingScore = musicList[playingMusic].all[tendency];
     const musicFile = musicList[playingMusic][playingScore].music;
     const scoreFile = musicList[playingMusic][playingScore].score;
     const scoreOffset = musicList[playingMusic][playingScore].offset;
     console.log(musicFile, scoreFile, scoreOffset);
-    // TODO : 2ファイルをダウンロードしてきてObjectにしてplay.jsのほうに書くであろうプレイ(メイン)関数に投げる
-    // 綾坂こと「ファイル名は取得できてるやで」
-    // 綾坂こと「"Promiseなんもわからん"になってるので理解してから続きを書く所存」
-}
+    // ファイルの取得→気合いでplay関数発火の流れ(悪質コメント)
+    const musicObj = new Audio(musicFile);
+    let scoreObj = null;
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", scoreFile);
+    xhr.responseType = "text"; // text, arraybuffer, blob, document, jsonが使用可能。jsonのresponseは自動パースされる
+    xhr.send();
+    xhr.onload = () => {
+        if (xhr.status == 200) {
+            scoreObj = JSON.parse(JSONC_to_JSON(xhr.response));
+            // 全部終わったら0.2秒待って画面切り替え & play関数の発火
+            window.setTimeout(() => {
+                document.querySelector("#list").classList.remove("using");
+                document.querySelector("#play").classList.add("using");
+                document.querySelector("#fade").classList.remove("fading");
+            }, 200);
+            window.setTimeout(() => {
+                const info = {
+                    "display": musicList[playingMusic].display[displayLang],
+                    "singer": musicList[playingMusic].singer[displayLang],
+                    "composer": musicList[playingMusic].composer[displayLang],
+                };
+                play(musicObj, scoreObj, scoreOffset, info);
+            }, 400);
+        }
+    }
+};

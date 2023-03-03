@@ -32,3 +32,8 @@ xhr.onload = () => {
         musicList = JSON.parse(JSONC_to_JSON(xhr.response));
     }
 };
+
+/**
+ * グローバルに表示言語の2文字言語コードをおいておく
+ */
+const displayLang = window.navigator.language;

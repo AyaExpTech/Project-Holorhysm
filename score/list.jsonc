@@ -28,7 +28,7 @@
             "en": "Nanahoshi Orchestra"
         },
         "Bloom": {
-            "score": "score/ExcuseBunny_Pekora/Bloom.json",
+            "score": "score/ExcuseBunny_Pekora/Bloom.jsonc",
             "music": "score/ExcuseBunny_Pekora/common.mp3",
             "difficulty": "18+",
             "constant": 18.8,
